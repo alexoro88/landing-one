@@ -1,0 +1,110 @@
+/* =============== VARIABLES CSS =============== */
+:root{
+    --header-heigth: 4.5em;
+
+    /* =====Variables de Color ====== */
+    --black-color: #0D121C;
+    --black-color-ligth: #384250;
+    --black-color-ligthen: #4D5761;
+    --white-color: #F9FAFB;
+    --white-body-color: #F3F4F6;
+    --cta-color: #7F56D9;
+
+    /* =====Variables de Tipograficas ====== */
+    --body-font: "Inter", sans-serif;
+
+    --font-text-xl: 20px;
+    --font-text-lg: 18px;
+    --font-text-md: 16px;
+    --font-text-sm: 14px;
+    --font-text-xs: 12px;
+
+    --font-display-xl: 72px;
+    --font-display-lg: 60px;
+    --font-display-md: 48px;
+    --font-display-sm: 32px;
+
+    /* ===== z-indez ====== */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* =========================== RESET FORMAT =========================== */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--body-font);
+    background-color: var(--white-color);
+}
+
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, ul, p{
+    margin: 0;
+}
+
+.container{
+    max-width: 1260px;
+    padding: 0 1em;
+}
+
+/* =============== BOTONES =============== */
+.btn__cta{
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 32px;
+    background-color: #0D121C;
+    border: none;
+    color: var(--white-color);
+    border-radius: 10000px;
+    -webkit-border-radius: 10000px;
+    -moz-border-radius: 10000px;
+    -ms-border-radius: 10000px;
+    -o-border-radius: 10000px;
+    font-family: var(--body-font);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__cta::after{
+    content: '';
+    position: absolute;
+    height: 112%;
+    width: 105%;
+    border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    -ms-border-radius: 1000px;
+    -o-border-radius: 1000px;
+    background-image: linear-gradient(to bottom right,#008cff, #e100ff);
+    z-index: -1;
+}
+
+.btn__cta:hover{
+    z-index: 0;
+}
+
+/* =============== HEADER =============== */
+/* letter-spacing figma 1% = 0.35px */
+p{
+    line-height: 140%;
+    font-size: var(--font-display-sm);
+    font-weight: 700;
+    letter-spacing: -.7px;
+}
